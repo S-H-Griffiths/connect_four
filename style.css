@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Montserrat", sans-serif;
+    background-color: snow;
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: midnightblue;
+    padding: 20px;
+    width: 400px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.coin {
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: midnightblue;
+    border: 2px white solid;
+    color: white;
+    font-size: 20px;
+    z-index: 4;
+    margin: 25px;
+    box-shadow: 1px 1px;
+}
+.reset {
+    height: 50px;
+    width: 150px;
+    align-items: center;
+}
+
+#board {
+    display: flex;
+    padding: 20px;
+}
+
+.slot {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.hole {
+    border: 40px solid midnightblue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translate(-30px, -30px);
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: gold;
+}
+
+.victory {
+    color: white;
+    position: fixed;
+    visibility: hidden;
+    width: 400px;
+    top: 30%;
+    left: 30%;
+    font-size: 40px;
+    border: 4px white solid;
+    text-align: center;
+    z-index: 2;
+    visibility: hidden;
+    animation: blinker linear 1s infinite;
+}
+
+.winningSlot {
+    animation: blinker linear 1s infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 70%;
+    }
+}
